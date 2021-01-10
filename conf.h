@@ -2,6 +2,8 @@
 #ifndef _whatever
 #define _whatever
 
+#define __POSIX
+
 /* -----------------start---------------------*/
 /* how big the gap between two following snakes has to be */
 #define SNAKES_MIN_GAP      3
