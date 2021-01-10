@@ -110,8 +110,8 @@ int main(){
   signal(SIGINT, userHadEnough);
   printf( "\033[2J\033[?25l" );
 
-  strcpy( str, "\033[38;2;8;202;40m" );
-  strcpy( strWhite, "\033[38;2;255;255;255m" );
+  strcpy( str, bodyCol );
+  strcpy( strWhite, tipCol );
 
   snakeStateMap += termSize.height;  /* NANI!? */
   snakeStateMap[-termSize.height] = SNAKE_STATE_START;
@@ -130,8 +130,8 @@ int main(){
   snakeStateMapEnd[termSize.height] = 2;
 
   while( keepRunning ){
-    int strInd = sizeof( "\033[38;2;8;202;40m" ) - 1;
-    int strWhtInd = sizeof( "\033[38;2;255;255;255m" ) - 1;
+    int strInd = sizeof( bodyCol ) - 1;
+    int strWhtInd = sizeof( tipCol ) - 1;
     char c;
 
     for( int i = 0; i < termSize.width; i++ ){
