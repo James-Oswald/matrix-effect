@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "ozOS",
+            "includePath": [
+                "${workspaceFolder}/**"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            //"intelliSenseMode": "gcc-x86",
+            "compilerArgs": [
+                "-std=c11"
+            ],
+            "intelliSenseMode": "gcc-x64",
+            "cStandard": "c11"
+        }
+    ],
+    "version": 4
+}
